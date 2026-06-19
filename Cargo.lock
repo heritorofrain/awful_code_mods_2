@@ -12,15 +12,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "heartseal"
-version = "0.1.0"
-dependencies = [
- "engage-il2cpp",
- "skyline",
- "unity2",
-]
-
-[[package]]
 name = "lazy_static"
 version = "1.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -31,6 +22,15 @@ name = "lazysimd"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "835be3adea8395b2d81a7688c72ea6ddc958b311dbe8ecffcf07f321e242a3c3"
+
+[[package]]
+name = "learnskillwithequip"
+version = "0.1.0"
+dependencies = [
+ "engage-il2cpp",
+ "skyline",
+ "unity2",
+]
 
 [[package]]
 name = "libc-nnsdk"
@@ -139,7 +139,7 @@ checksum = "e6e4313cd5fcd3dad5cafa179702e2b244f760991f45397d14d4ebf38247da75"
 [[package]]
 name = "unity-macro"
 version = "0.1.0"
-source = "git+https://github.com/DivineDragonFanClub/unity2#fdbbc0487e959348ad70bcd3adf3483a3212935e"
+source = "git+https://github.com/DivineDragonFanClub/unity2#5b93310d98d0b0df2722382206c89ff9e19c88bf"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -149,7 +149,7 @@ dependencies = [
 [[package]]
 name = "unity2"
 version = "0.1.0"
-source = "git+https://github.com/DivineDragonFanClub/unity2#fdbbc0487e959348ad70bcd3adf3483a3212935e"
+source = "git+https://github.com/DivineDragonFanClub/unity2#5b93310d98d0b0df2722382206c89ff9e19c88bf"
 dependencies = [
  "lazysimd",
  "skyline",

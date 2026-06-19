@@ -1,5 +1,5 @@
 [package]
-name = "heartseal"
+name = "learnskillwithequip"
 version = "0.1.0"
 authors = []
 edition = "2021"
@@ -13,12 +13,20 @@ crate-type = ["cdylib"]
 [dependencies]
 skyline = "0.6.0"
 engage-il2cpp = { git = "https://github.com/DivineDragonFanClub/engage-il2cpp" , features = [
-    "app-classchange",
+    "app-gamemessage",
+    "app-gamemessage-types",
+    "app-gamesound",
     "app-jobdata",
+    "app-mess",
+    "app-persondata",
+    "app-skillarray",
+    "app-skilldata",
     "app-unit",
+    "app-unitgrowsequence",
     "system-collections-generic-dictionary_2",
     "system-collections-generic-list_1",
     "system-object",
+    "unity_engine-random",
 ] }
 unity2 = { git = "https://github.com/DivineDragonFanClub/unity2" }
 
