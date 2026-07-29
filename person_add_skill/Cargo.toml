@@ -1,0 +1,34 @@
+[package]
+name = "personskillscript"
+version = "0.1.0"
+authors = []
+edition = "2021"
+
+[package.metadata.skyline]
+titleid = "01006A800016E000" # Smash Ultimate
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+engage-il2cpp = { git = "https://github.com/DivineDragonFanClub/engage-il2cpp", tag = "0.1.1", version = "0.1.1" , features = [
+    "app-eventscript",
+    "app-persondata",
+    "app-persondata",
+    "app-skillarray",
+    "app-skilldata",
+    "app-unit",
+    "moon_sharp-interpreter-dynvalue",
+    "system-collections-generic-dictionary_2",
+    "system-collections-generic-list_1",
+    "system-object",
+] }
+skyline = "0.6.0"
+unity-nx = { git = "https://github.com/DivineDragonFanClub/unity-nx", tag = "0.1.1", version = "0.1.0" }
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+lto = true
